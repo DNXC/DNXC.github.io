@@ -1,9 +1,10 @@
+/*! Del Norte Banquest Website | MIT License | https://github.com/dnxc/dnxc.github.io */
 /* Global style */
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #40404a;
+    color: #1a1a1a;
     line-height: 1;
     height: 100%;
     margin: 0;
@@ -12,6 +13,7 @@ body {
 /* Text styles */
 
 h1 {
+    color: #e8e8e8;
     font-size: 75px;
     font-weight: 700;
     cursor: default;
@@ -32,8 +34,8 @@ p {
 }
 
 .caption {
-    font-size: 14px;
-    color: #6c6c6c;
+    font-size: 16px;
+    color: #dddddd;
 }
 
 ::selection {
@@ -73,9 +75,21 @@ li:last-child:after {
 
 /* Asset styles */
 
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    vertical-align: baseline;
+    object-fit: contain;
+}
+
 .video-link, .btn {
     background: none;
-    border: 2px solid #0d0f16;
     border-radius: 2px;
     display: inline-block;
     margin: 10px 10px;
@@ -84,7 +98,15 @@ li:last-child:after {
     cursor: pointer;
 }
 
+.btn {
+    color: #d7d7d7;
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid #dedede;
+}
+
 .video-link {
+    border: 2px solid #131313;
     position: relative;
     height: 200px;
     width: 200px;
@@ -99,20 +121,35 @@ li:last-child:after {
     text-shadow: 0 1px #000016;
 }
 
-.btn {
-    color: #2d2d2d;
-    font-size: 20px;
-    padding: 20px;
-}
-
 .btn:hover {
-    background: #222222;
+    background: #d7d7d7;
     text-decoration: none;
-    color: #ffffff;
-    text-shadow: 0 1px #000016;
+    color: #141414;
+    text-shadow: 0 1px #ffffff;
 }
 
 /* Division styles */
+
+.no-bg-video {
+    background: url("../img/bg-poster.jpg") no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mesh-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    background-image: url("../img/video-grid.png");
+}
 
 .landing-section {
     position: relative;
@@ -121,6 +158,7 @@ li:last-child:after {
     left: 0;
     right: 0;
     bottom: 0;
+    overflow: hidden;
 }
 
 .centerpiece {
@@ -164,4 +202,16 @@ li:last-child:after {
     text-align: center;
     margin: 0 auto;
     top: 45px;
+}
+
+/* Mobile style */
+
+@media only screen and (max-device-width: 425px),
+only screen and (max-width: 400px) {
+    html {
+    }
+
+    .bg-video {
+        display: none;
+    }
 }
