@@ -1,3 +1,4 @@
+/*! Del Norte Banquest Website | MIT License | https://github.com/dnxc/dnxc.github.io */
 /* Global style */
 
 body {
@@ -18,14 +19,6 @@ h1 {
     cursor: default;
     margin: 50px 0;
     color: #1a1a1a;
-}
-
-.date {
-    font-size: 14px;
-    margin: 0;
-    font-weight: 700;
-    color: #e2e2e2;
-    line-height: 20px;
 }
 
 p {
@@ -63,8 +56,16 @@ a:hover, a:active {
 
 .desc-box {
     background-color: #1b1b1b;
-    width: 600px;
+    width: 984px;
     padding: 20px;
+}
+
+.date {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 700;
+    color: #e2e2e2;
+    line-height: 20px;
 }
 
 .desc-text {
