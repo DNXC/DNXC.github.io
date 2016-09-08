@@ -189,7 +189,7 @@ video {
 
 .footer-links {
     position: relative;
-    margin: 0 50px;
+    margin: 0 35px;
 }
 
 .footer-links li {
@@ -215,9 +215,6 @@ video {
 
 @media only screen and (max-device-width: 425px),
 only screen and (max-width: 400px) {
-    html {
-    }
-
     .bg-video {
         display: none;
     }
