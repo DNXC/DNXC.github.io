@@ -14,8 +14,8 @@ If you'd like to help out you can take a look at the
 and bug fixes that are available for you to work on. Just be 
 sure to tag yourself if you plan on working on something.
 
-If you want to contact us more directly, we have a public [Banquest discord 
-server][discord server]. Anyone can join and talk about DNXC/Banquest related topics so
+If you want to contact us more directly, we have a public [**Banquest discord 
+server**][discord server]. Anyone can join and talk about DNXC/Banquest related topics so
 feel free to drop by and say hello!
 
 License
