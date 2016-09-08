@@ -46,33 +46,13 @@ p {
 }
 
 a {
-    color: #181818;
+    color: #1a1a1a;
     text-decoration: none;
     transition: color .15s;
 }
 
 a:hover, a:active {
     color: #98beff;
-}
-
-li {
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    padding: 0 0 20px 0;
-    cursor: default;
-}
-
-li:after {
-    content: "|";
-    margin: 0 8px;
-    opacity: .3;
-}
-
-li:last-child:after {
-    content: "";
-    margin: 0;
 }
 
 /* Asset styles */
@@ -104,11 +84,26 @@ video {
 .btn {
     color: #d7d7d7;
     font-size: 20px;
-    padding: 20px 20px 5px 20px;
+    padding: 15px 15px 5px 15px;
     border: 2px solid #dedede;
 }
 
+.btn:hover {
+    background: #d7d7d7;
+    text-decoration: none;
+    color: #141414;
+    text-shadow: 0 1px #ffffff;
+}
+
+.video-link p {
+    margin: auto 0;
+}
+
 .video-link {
+    color: #111111;
+    display: flex;
+    align-items: center;
+    text-align: center;
     border: 2px solid #131313;
     position: relative;
     height: 200px;
@@ -124,17 +119,10 @@ video {
     text-shadow: 0 1px #000016;
 }
 
-.btn:hover {
-    background: #d7d7d7;
-    text-decoration: none;
-    color: #141414;
-    text-shadow: 0 1px #ffffff;
-}
-
 /* Division styles */
 
 .no-bg-video {
-    background: url("../img/bg-video-poster.jpg") no-repeat;
+    background: url("/img/bg-video-poster.jpg") no-repeat;
     background-position: center top;
     background-size: cover;
     position: absolute;
@@ -151,7 +139,7 @@ video {
     bottom: 0;
     position: absolute;
     background-color: rgba(0,0,0,0.3);
-    background-image: url("../img/video-grid.png");
+    background-image: url("/img/video-grid.png");
 }
 
 .landing-section {
@@ -191,29 +179,42 @@ video {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    height: 80px;
     background-color: #bababa;
-    padding-bottom: 80px;
     position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     z-index: 1;
 }
 
 .footer-links {
     position: relative;
-    text-align: center;
-    margin: 0 auto;
-    top: 45px;
+    margin: 0 35px;
+}
+
+.footer-links li {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    cursor: default;
+}
+
+.footer-links li:after {
+    content: "|";
+    margin: 0 8px;
+    opacity: .3;
+}
+
+.footer-links li:last-child:after {
+    content: "";
+    margin: 0;
 }
 
 /* Mobile style */
 
 @media only screen and (max-device-width: 425px),
 only screen and (max-width: 400px) {
-    html {
-    }
-
     .bg-video {
         display: none;
     }
